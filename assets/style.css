@@ -293,4 +293,255 @@ footer img {
 .footer-1 p{
 	padding: 38px;
 }
-	
+
+/*slide kritik dan saran*/
+
+.konten{
+    margin-top: 300px;
+    overflow: hidden; 
+    width: 100%;
+    height: 50%;
+    /* position: fixed; */
+
+}
+.oii{
+    width: 1000px;
+    margin-right: 200px;
+    float: left;
+}
+.slide-konten{
+    padding-top: 80px;
+    top: 1600px;
+    width: 6000px;
+    height: 370px;
+    position: absolute;
+    background-color: steelblue;
+    /*pengaturan durasi lama tampil gambar bisa di atur di bawah ini*/
+    animation-name:slider;
+    animation-duration:50s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count:infinite;
+    -webkit-animation-name:slider;
+    -webkit-animation-duration:50s;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count:infinite;
+    -moz-animation-name:slider;
+    -moz-animation-duration:50s;
+    -moz-animation-timing-function: ease-in-out;
+    -moz-animation-iteration-count:infinite;
+    -o-animation-name:slider;
+    -o-animation-duration:50s;
+    -o-animation-timing-function: ease-in-out;
+    -o-animation-iteration-count:infinite;
+
+}
+.slide-konten:hover{
+    -webkit-animation-play-state:paused; 
+    -moz-animation-play-state:paused; 
+    -o-animation-play-state:paused; 
+    animation-play-state:paused; 
+}
+.slide-img{
+    box-shadow: 12px 12px 10px rgba(0,0,0,0.7);
+    border-radius: 20px;
+    margin-left: 50px;
+    float: left;
+    width: 250px;
+    height:250px;
+}
+.slide-img img{
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-image: cover;
+}
+.slide-konten-text{
+    box-shadow: 12px 12px 10px rgba(0,0,0,0.7);
+    background-color: whitesmoke;
+    margin-right:50px;
+    margin-top: 20px;
+    padding: 30px;
+    float: right;
+    width: 500px;
+    height: 150px;
+    border-radius: 20px;
+}
+.slide-konten-text p{
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    text-align: left;
+}
+
+@keyframes slider {     
+    0% {
+        left: 0; opacity: 1; 
+    }
+    5% {
+        left: 0; opacity: 1; 
+    }
+    12.5%{
+        left: -1100px; opacity: 1;  
+    }
+    15%{
+        left: -1100px; opacity: 1;  
+    }   
+    25%{
+        left: -2200px; opacity: 1;
+    }
+    30%{
+        left: -2200px; opacity: 1;
+    }       
+    37.5% {
+        left: -3400px; opacity: 1; 
+    }
+    40% {
+        left: -3400px; opacity: 1; 
+    }
+    50% {
+        left: -4650px; opacity: 1; 
+    }
+    55% {
+        left: -4650px; opacity: 1; 
+    }
+    62.5% {
+        left: -3400px; opacity: 1; 
+    }
+    65% {
+        left: -3400px; opacity: 1; 
+    }
+    75% {
+        left: -2200px; opacity: 1; 
+    }
+    80% {
+        left: -2200px; opacity: 1; 
+    }
+    87.5% {
+        left: -1000px; opacity: 1; 
+    }
+    90% {
+        left: -1000px; opacity: 1; 
+    }
+    95%{
+        left: 00px; opacity: 1;
+    }
+    100%{
+        left: 0px; opacity: 1;  
+    }
+}
+
+@-moz-keyframes slider{
+    0% {
+        left: 0; opacity: 1; 
+    }
+    5% {
+        left: 0; opacity: 1; 
+    }
+    12.5%{
+        left: -1100px; opacity: 1;  
+    }
+    15%{
+        left: -1100px; opacity: 1;  
+    }   
+    25%{
+        left: -2200px; opacity: 1;
+    }
+    30%{
+        left: -2200px; opacity: 1;
+    }       
+    37.5% {
+        left: -3400px; opacity: 1; 
+    }
+    40% {
+        left: -3400px; opacity: 1; 
+    }
+    50% {
+        left: -4650px; opacity: 1; 
+    }
+    55% {
+        left: -4650px; opacity: 1; 
+    }
+    62.5% {
+        left: -3400px; opacity: 1; 
+    }
+    65% {
+        left: -3400px; opacity: 1; 
+    }
+    75% {
+        left: -2200px; opacity: 1; 
+    }
+    80% {
+        left: -2200px; opacity: 1; 
+    }
+    87.5% {
+        left: -1000px; opacity: 1; 
+    }
+    90% {
+        left: -1000px; opacity: 1; 
+    }
+    95%{
+        left: 00px; opacity: 1;
+    }
+    100%{
+        left: 0px; opacity: 1;  
+    }
+}
+
+
+@-webkit-keyframes slider{
+    0% {
+        left: 0; opacity: 1; 
+    }
+    5% {
+        left: 0; opacity: 1; 
+    }
+    12.5%{
+        left: -1100px; opacity: 1;  
+    }
+    15%{
+        left: -1100px; opacity: 1;  
+    }   
+    25%{
+        left: -2200px; opacity: 1;
+    }
+    30%{
+        left: -2200px; opacity: 1;
+    }       
+    37.5% {
+        left: -3400px; opacity: 1; 
+    }
+    40% {
+        left: -3400px; opacity: 1; 
+    }
+    50% {
+        left: -4650px; opacity: 1; 
+    }
+    55% {
+        left: -4650px; opacity: 1; 
+    }
+    62.5% {
+        left: -3400px; opacity: 1; 
+    }
+    65% {
+        left: -3400px; opacity: 1; 
+    }
+    75% {
+        left: -2200px; opacity: 1; 
+    }
+    80% {
+        left: -2200px; opacity: 1; 
+    }
+    87.5% {
+        left: -1000px; opacity: 1; 
+    }
+    90% {
+        left: -1000px; opacity: 1; 
+    }
+    95%{
+        left: 00px; opacity: 1;
+    }
+    100%{
+        left: 0px; opacity: 1;  
+    }
+}
