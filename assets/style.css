@@ -121,25 +121,37 @@ nav ul li a:hover {
 /* mobile */
 @media screen and (max-width: 576px) {
     .menu-toggle {
-        display: flex;
+        display: none;
+		position: right;
     }
+	
+	.menu-toggle span {
+		margin: 4px;
+		
+	}
+	
     nav ul  {
         position: absolute;
         right: 0;
         top: 0;
-        width: 80%;
-        height: 100vh;
+		margin-top: 10px;
+        width: 45%;
+        height: 50vh;
         justify-content: space-evenly;
         flex-direction: column;
         align-items: center;
         background-color: rgba(66, 108, 152,0.6);
+		padding-top : 2em;
+		
 		/*background-color: rgb(226, 43, 43); ini asalnya*/
         z-index: -1;
         transform: translateX(100%);
         transition: all 1s;
         opacity: 0;
     }
-
+	
+	.logo {width: 80%;}
+	
     nav ul.slide {
         opacity: 1;
         transform: translateX(0);
