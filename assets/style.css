@@ -332,13 +332,12 @@ footer img {
 
 /*slide kritik dan saran*/
 
-.konten{
-    margin-top: 300px;
+.slide{
     overflow: hidden; 
     width: 100%;
     height: 50%;
-    position: absolute;
-
+    background-color: steelblue;
+    position: relative;
 }
 .oii{
     width: 1000px;
@@ -351,7 +350,6 @@ footer img {
     width: 6000px;
     height: 370px;
     position: relative;
-    background-color: steelblue;
     /*pengaturan durasi lama tampil gambar bisa di atur di bawah ini*/
     animation-name:slider;
     animation-duration:50s;
@@ -581,4 +579,198 @@ footer img {
     100%{
         left: 0px; opacity: 1;  
     }
+}
+
+
+/* responsive breakpoint */
+/* tablet */
+@media screen and (max-width: 768px) {
+        .slide{
+            width: auto;
+            height:700px;
+        }
+        .slide-img{
+            margin:  0 auto;
+            margin-bottom: 30px;
+            float:none;
+        }
+        .slide-konten-text{
+            margin:  0 auto;
+            float:none;
+            width: 350px;
+        }
+        .slide-konten-text p{
+            font-size:  17px;
+        }
+        @keyframes slider {     
+            0% {
+                left: -230px; opacity: 1; 
+            }
+            5%{
+                left: -230px; opacity: 1;   
+            }
+            12.5%{
+                left: -1430px; opacity: 1;  
+            }
+            15%{
+                left: -1430px; opacity: 1;  
+            }   
+            25%{
+                left: -2630px; opacity: 1;
+            }
+            30%{
+                left: -2630px; opacity: 1;
+            }       
+            37.5% {
+                left: -3830px; opacity: 1; 
+            }
+            40% {
+                left: -3830px; opacity: 1; 
+            }
+            50% {
+                left: -5030px; opacity: 1; 
+            }
+            55% {
+                left: -5030px; opacity: 1; 
+            }
+            62.5% {
+                left: -3830px; opacity: 1; 
+            }
+            65% {
+                left: -3830px; opacity: 1; 
+            }
+            75% {
+                left: -2630px; opacity: 1; 
+            }
+            80% {
+                left: -2630px; opacity: 1; 
+            }
+            87.5% {
+                left: -1430px; opacity: 1; 
+            }
+            90% {
+                left: -1430px; opacity: 1; 
+            }
+            95%{
+                left: -230px; opacity: 1;
+            }
+            100%{
+                left: -230px; opacity: 1;  
+            }
+
+        @-moz-keyframes slider{
+            0% {
+                left: 0; opacity: 1; 
+            }
+            5% {
+                left: 0; opacity: 1; 
+            }
+            12.5%{
+                left: -1100px; opacity: 1;  
+            }
+            15%{
+                left: -1100px; opacity: 1;  
+            }   
+            25%{
+                left: -2200px; opacity: 1;
+            }
+            30%{
+                left: -2200px; opacity: 1;
+            }       
+            37.5% {
+                left: -3400px; opacity: 1; 
+            }
+            40% {
+                left: -3400px; opacity: 1; 
+            }
+            50% {
+                left: -4650px; opacity: 1; 
+            }
+            55% {
+                left: -4650px; opacity: 1; 
+            }
+            62.5% {
+                left: -3400px; opacity: 1; 
+            }
+            65% {
+                left: -3400px; opacity: 1; 
+            }
+            75% {
+                left: -2200px; opacity: 1; 
+            }
+            80% {
+                left: -2200px; opacity: 1; 
+            }
+            87.5% {
+                left: -1000px; opacity: 1; 
+            }
+            90% {
+                left: -1000px; opacity: 1; 
+            }
+            95%{
+                left: 00px; opacity: 1;
+            }
+            100%{
+                left: 0px; opacity: 1;  
+            }
+        }
+
+
+        @-webkit-keyframes slider{
+            0% {
+                left: 0; opacity: 1; 
+            }
+            5% {
+                left: 0; opacity: 1; 
+            }
+            12.5%{
+                left: -1100px; opacity: 1;  
+            }
+            15%{
+                left: -1100px; opacity: 1;  
+            }   
+            25%{
+                left: -2200px; opacity: 1;
+            }
+            30%{
+                left: -2200px; opacity: 1;
+            }       
+            37.5% {
+                left: -3400px; opacity: 1; 
+            }
+            40% {
+                left: -3400px; opacity: 1; 
+            }
+            50% {
+                left: -4650px; opacity: 1; 
+            }
+            55% {
+                left: -4650px; opacity: 1; 
+            }
+            62.5% {
+                left: -3400px; opacity: 1; 
+            }
+            65% {
+                left: -3400px; opacity: 1; 
+            }
+            75% {
+                left: -2200px; opacity: 1; 
+            }
+            80% {
+                left: -2200px; opacity: 1; 
+            }
+            87.5% {
+                left: -1000px; opacity: 1; 
+            }
+            90% {
+                left: -1000px; opacity: 1; 
+            }
+            95%{
+                left: 00px; opacity: 1;
+            }
+            100%{
+                left: 0px; opacity: 1;  
+            }
+        }
+
 }
