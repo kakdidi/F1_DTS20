@@ -140,7 +140,7 @@ nav ul li a:hover {
         justify-content: space-evenly;
         flex-direction: column;
         align-items: center;
-        background-color: rgba(66, 108, 152,0.6);
+        background-color: rgb(66, 94, 124);
 		padding-top : 2em;
 		
 		/*background-color: rgb(226, 43, 43); ini asalnya*/
@@ -152,7 +152,7 @@ nav ul li a:hover {
 	
 	.logo {width: 80%;}
 	
-    nav ul.slide {
+    nav ul.slide-nav {
         opacity: 1;
         transform: translateX(0);
     }
@@ -585,9 +585,32 @@ footer img {
 /* responsive breakpoint */
 /* tablet */
 @media screen and (max-width: 768px) {
+    .top-wrapper {
+        text-align: center;
+        color: white;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        opacity: 0.8;
+        font-family: 'Racing Sans One',sans-serif;;
+    }
+    
+    .top-wrapper h1 {
+        color: #b8e994;
+        margin-top: 150px;
+        letter-spacing: 5px;
+        font-size: 25px;
+        animation: text 3s 1;
+    }
+    
         .slide{
             width: auto;
             height:700px;
+        }
+        .slide-nav{
+            margin-top:0;
+            width: 100px;
+            height:200px;
         }
         .slide-img{
             margin:  0 auto;
