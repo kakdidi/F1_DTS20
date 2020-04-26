@@ -25,7 +25,6 @@ nav {
     height: 60px;
     align-items: center;
     z-index: 50;
-    
 
 }
 
@@ -110,54 +109,6 @@ nav ul li a:hover {
     opacity: 0;
     transform: scale(0);
 }
-/* responsive breakpoint */
-/* tablet */
-@media screen and (max-width: 768px) {
-    nav ul {
-        width: 50%;
-    }
-}
-
-/* mobile */
-@media screen and (max-width: 576px) {
-    .menu-toggle {
-        display: none;
-		position: right;
-    }
-	
-	.menu-toggle span {
-		margin: 4px;
-		
-	}
-	
-    nav ul  {
-        position: absolute;
-        right: 0;
-        top: 0;
-		margin-top: 10px;
-        width: 45%;
-        height: 50vh;
-        justify-content: space-evenly;
-        flex-direction: column;
-        align-items: center;
-        background-color: rgba(66, 108, 152,0.6);
-		padding-top : 2em;
-		
-		/*background-color: rgb(226, 43, 43); ini asalnya*/
-        z-index: -1;
-        transform: translateX(100%);
-        transition: all 1s;
-        opacity: 0;
-    }
-	
-	.logo {width: 80%;}
-	
-    nav ul.slide {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
 .header {
     background-image: url(img/team.jpg);
     background-size: cover;
@@ -173,38 +124,17 @@ nav ul li a:hover {
     width: 100%;
     height: 100%;
     opacity: 0.8;
-    font-family: 'Racing Sans One',sans-serif;;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .top-wrapper h1 {
-    color: #b8e994;
     margin-top: 250px;
     letter-spacing: 5px;
     font-size: 36px;
-    animation: text 3s 1;
 }
 
 .top-wrapper .text {
-    margin-top: 20px;
-    /* text-transform: uppercase; */
-    /* animation: text 3s 1; */
-}
-
-/* nambah animasi */
-@keyframes text {
-    0% {
-        color: black;
-        margin-bottom: 10px;
-        
-    }
-    30% {
-        letter-spacing: 20px;
-        margin-bottom: 10px;
-    }
-    85% {
-        letter-spacing: 8px;
-        margin-bottom: -20px;
-    }
+    margin-top: 10px;
 }
 
 .btn-wrapper {
@@ -213,7 +143,7 @@ nav ul li a:hover {
 
 .btn { 
     padding: 12px 24px 12px 24px;
-    color:#b8e994;;
+    color: white;
     display: inline-block;
     opacity: 0.8;
     background-color: rgba(59, 89, 152,0.7);
@@ -332,13 +262,12 @@ footer img {
 
 /*slide kritik dan saran*/
 
-.konten{
-    margin-top: 300px;
+.slide{
     overflow: hidden; 
     width: 100%;
     height: 50%;
-    position: absolute;
-
+    background-color: steelblue;
+    position: relative;
 }
 .oii{
     width: 1000px;
@@ -351,7 +280,6 @@ footer img {
     width: 6000px;
     height: 370px;
     position: relative;
-    background-color: steelblue;
     /*pengaturan durasi lama tampil gambar bisa di atur di bawah ini*/
     animation-name:slider;
     animation-duration:50s;
@@ -580,5 +508,230 @@ footer img {
     }
     100%{
         left: 0px; opacity: 1;  
+    }
+}
+
+/* responsive breakpoint */
+/* tablet */
+@media screen and (max-width: 768px) {
+    nav ul {
+        width: 50%;
+    }
+
+    .slide{
+            width: auto;
+            height:700px;
+        }
+        .slide-img{
+            margin:  0 auto;
+            margin-bottom: 30px;
+            float:none;
+        }
+        .slide-konten-text{
+            margin:  0 auto;
+            float:none;
+            width: 350px;
+        }
+        .slide-konten-text p{
+            font-size:  17px;
+        }
+        @keyframes slider {     
+            0% {
+                left: -230px; opacity: 1; 
+            }
+            5%{
+                left: -230px; opacity: 1;   
+            }
+            12.5%{
+                left: -1430px; opacity: 1;  
+            }
+            15%{
+                left: -1430px; opacity: 1;  
+            }   
+            25%{
+                left: -2630px; opacity: 1;
+            }
+            30%{
+                left: -2630px; opacity: 1;
+            }       
+            37.5% {
+                left: -3830px; opacity: 1; 
+            }
+            40% {
+                left: -3830px; opacity: 1; 
+            }
+            50% {
+                left: -5030px; opacity: 1; 
+            }
+            55% {
+                left: -5030px; opacity: 1; 
+            }
+            62.5% {
+                left: -3830px; opacity: 1; 
+            }
+            65% {
+                left: -3830px; opacity: 1; 
+            }
+            75% {
+                left: -2630px; opacity: 1; 
+            }
+            80% {
+                left: -2630px; opacity: 1; 
+            }
+            87.5% {
+                left: -1430px; opacity: 1; 
+            }
+            90% {
+                left: -1430px; opacity: 1; 
+            }
+            95%{
+                left: -230px; opacity: 1;
+            }
+            100%{
+                left: -230px; opacity: 1;  
+            }
+
+        @-moz-keyframes slider{
+            0% {
+                left: 0; opacity: 1; 
+            }
+            5% {
+                left: 0; opacity: 1; 
+            }
+            12.5%{
+                left: -1100px; opacity: 1;  
+            }
+            15%{
+                left: -1100px; opacity: 1;  
+            }   
+            25%{
+                left: -2200px; opacity: 1;
+            }
+            30%{
+                left: -2200px; opacity: 1;
+            }       
+            37.5% {
+                left: -3400px; opacity: 1; 
+            }
+            40% {
+                left: -3400px; opacity: 1; 
+            }
+            50% {
+                left: -4650px; opacity: 1; 
+            }
+            55% {
+                left: -4650px; opacity: 1; 
+            }
+            62.5% {
+                left: -3400px; opacity: 1; 
+            }
+            65% {
+                left: -3400px; opacity: 1; 
+            }
+            75% {
+                left: -2200px; opacity: 1; 
+            }
+            80% {
+                left: -2200px; opacity: 1; 
+            }
+            87.5% {
+                left: -1000px; opacity: 1; 
+            }
+            90% {
+                left: -1000px; opacity: 1; 
+            }
+            95%{
+                left: 00px; opacity: 1;
+            }
+            100%{
+                left: 0px; opacity: 1;  
+            }
+        }
+
+
+        @-webkit-keyframes slider{
+            0% {
+                left: 0; opacity: 1; 
+            }
+            5% {
+                left: 0; opacity: 1; 
+            }
+            12.5%{
+                left: -1100px; opacity: 1;  
+            }
+            15%{
+                left: -1100px; opacity: 1;  
+            }   
+            25%{
+                left: -2200px; opacity: 1;
+            }
+            30%{
+                left: -2200px; opacity: 1;
+            }       
+            37.5% {
+                left: -3400px; opacity: 1; 
+            }
+            40% {
+                left: -3400px; opacity: 1; 
+            }
+            50% {
+                left: -4650px; opacity: 1; 
+            }
+            55% {
+                left: -4650px; opacity: 1; 
+            }
+            62.5% {
+                left: -3400px; opacity: 1; 
+            }
+            65% {
+                left: -3400px; opacity: 1; 
+            }
+            75% {
+                left: -2200px; opacity: 1; 
+            }
+            80% {
+                left: -2200px; opacity: 1; 
+            }
+            87.5% {
+                left: -1000px; opacity: 1; 
+            }
+            90% {
+                left: -1000px; opacity: 1; 
+            }
+            95%{
+                left: 00px; opacity: 1;
+            }
+            100%{
+                left: 0px; opacity: 1;  
+            }
+        }
+
+}
+
+/* mobile */
+@media screen and (max-width: 576px) {
+    .menu-toggle {
+        display: flex;
+    }
+    nav ul  {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 80%;
+        height: 100vh;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(66, 108, 152,0.6);
+        /*background-color: rgb(226, 43, 43); ini asalnya*/
+        z-index: -1;
+        transform: translateX(100%);
+        transition: all 1s;
+        opacity: 0;
+    }
+
+    nav ul.slide {
+        opacity: 1;
+        transform: translateX(0);
     }
 }
