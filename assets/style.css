@@ -149,9 +149,7 @@ nav ul li a:hover {
         transition: all 1s;
         opacity: 0;
     }
-	
-	.logo {width: 80%;}
-	
+		
     nav ul.slide {
         opacity: 1;
         transform: translateX(0);
@@ -309,7 +307,7 @@ a {
 
 /* footer */
 footer {
-    position: relative;
+  position: relative;
     /* display: block; */
   padding-top: 10px;
   background-color: rgb(66, 108, 152);
@@ -773,4 +771,15 @@ footer img {
             }
         }
 
+}
+@media screen and (max-width: 576px) {
+    footer{
+        text-align: center;
+    }
+    .logoFooter{
+        float: none;
+    }
+    .footer-1{
+        float: none;
+    }
 }
